@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MicrophoneBooster</string>
+    <string name="difference" translatable="false">20dp</string>
+    <string name="gain_value">Gain Value</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Recorder Settings</string>
+    <string name="speakers_type">Speakers type</string>
+    <string name="choose_Audioformat">Audio Format</string>
+    <string name="choose_sample_rate">Sample Rate</string>
+    <string-array name="colorArray">
+        <item>.mp4</item>
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.m4a</item>
+    </string-array>
+    <string-array name="stero_mono">
+        <item>mono</item>
+        <item>stereo</item>
+    </string-array>
+    <string-array name="hertzarray">
+        <item>48 KHz (highest)</item>
+        <item>44 kHz (CD)</item>
+        <item>32 kHz (FM radio)</item>
+        <item>22 kHz (AM radio)</item>
+        <item>16 kHz (default)</item>
+        <item>11 kHz (telephone)</item>
+        <item>8 kHz (lowest)</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="remove_noise">Remove Noise</string>
+    <string name="my_record_1" translatable="false">record_1</string>
+    <string name="record">Record</string>
+    <string name="listen">Listen</string>
+</resources>

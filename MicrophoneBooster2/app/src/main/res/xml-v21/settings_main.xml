@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="Settings">
+    <PreferenceCategory
+        android:layout="@layout/divider_preference"
+        />
+
+    <PreferenceCategory
+        android:title="@string/settings_title">
+        <ListPreference
+            android:title="@string/choose_Audioformat"
+            android:key="chosenFormat"
+            android:defaultValue=".mp3"
+            android:entries="@array/colorArray"
+            android:entryValues="@array/colorArray" />
+    </PreferenceCategory>
+    <ListPreference
+        android:key="Sample_Rate"
+        android:title="@string/choose_sample_rate"
+        android:defaultValue="44kHz(CD)"
+        android:entries="@array/hertzarray"
+        android:entryValues="@array/hertzarray"
+        android:summary=" 44kHz(CD)"
+        >
+    </ListPreference>
+    <PreferenceCategory
+        android:layout="@layout/divider_preference"
+        />
+    <ListPreference
+        android:title="@string/speakers_type"
+        android:key="recordtype"
+        android:defaultValue="mono"
+        android:entries="@array/stero_mono"
+        android:entryValues="@array/stero_mono" />
+</PreferenceScreen>

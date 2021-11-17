@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">زياده صوت الميكروفون</string>
+    <string name="gain_value">مقدار الزياده</string>
+    <string name="settings_menu_item">الإعدادات</string>
+    <string name="settings_title">"  اعدادات المسجل"</string>
+    <string name="remove_noise">عزل الصوت</string>
+    <string name="record">التسجيل</string>
+    <string name="listen">سماع التسجيل</string>
+    <string name="choose_Audioformat"> نوع التسجيل</string>
+    <string name="speakers_type">مكبر الصوت</string>
+    <string name="choose_sample_rate">معدل أخذ العينات الصوتية</string>
+</resources>

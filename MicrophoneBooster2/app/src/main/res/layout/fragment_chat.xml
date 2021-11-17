@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recordName"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:autofillHints="false"/>
+                        <TextView
+                            android:id="@+id/Record_extension"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#3E3E3E"
+                            android:textSize="20sp" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_width="match_parent"
+        android:weightSum="1.5"
+        android:layout_below="@id/remove_checkbox"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:text="@string/gain_value"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar_mic_gain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="20"
+            android:progress="3"
+            />
+    </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/remove_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layouter"
+                android:layout_centerHorizontal="true"
+                android:text="@string/remove_noise" />
+            <ImageView
+                android:id="@+id/record_button"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/seekbar_layout"
+                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/gain_value"
+                android:src="@drawable/ic_mic_record_foreground" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
